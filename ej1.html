@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="Numero1">Ingrese un numero</textarea>
+    <button id="ingresar">Ingresar</button>
+    <script lang="JavaScript">
+        var nombre;
+        nombre = Santino;
+
+        var edad;
+        edad = 16;
+
+        var esEstudiante;
+        esEstudiante = true;
+
+        function saludar(nombre){
+            alert("Hola ",nombre);
+        };
+
+        const num1 = Document.getElementById("Numero1");
+        const ingr = Document.getElementById("ingresar");
+
+        ingr.addEventListener("click", () => {
+            console.log('object');
+            mostrar(); 
+        });
+
+        function mostrar(){
+            if (num1 < 0) {
+                return ("Negativo");
+            } else if (num1 > 0){
+                return alert("Positivo");
+            } else {
+                return alert("Igual a cero");
+            };
+        };
+
+    </script>
+</body>
+</html>
