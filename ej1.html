@@ -10,6 +10,8 @@
         var nombre;
         nombre = Santino;
 
+        var res;
+
         var edad;
         edad = 16;
 
@@ -30,14 +32,16 @@
 
         function mostrar(){
             if (num1 < 0) {
-                return ("Negativo");
+                res = ("Negativo");
             } else if (num1 > 0){
-                return alert("Positivo");
+                res = ("Positivo");
             } else {
-                return alert("Igual a cero");
+                res = ("Igual a cero");
             };
+           return alert(res);
         };
 
     </script>
+    
 </body>
 </html>
