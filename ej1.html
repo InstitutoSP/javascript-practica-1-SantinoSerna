@@ -4,14 +4,23 @@
     <title>Document</title>
 </head>
 <body>
-    <textarea id="Numero1">Ingrese un numero</textarea>
-    <button id="ingresar">Ingresar</button>
+    <H1>Ingrese un numero</H1>
+    <textarea id="Numero1"></textarea>
+    <a href="#" onmouseover="mostrar(num1)">Ingresar</a>
+    <hr>
+   <a href="#" onmouseover="saludar(nombre)">hola</a>
+   <hr>
+   <a href="#" onmouseover="pepe()">bucle 1</a>
+   <hr>
+   <a href="#" onmouseover="tomas()">bucle 2</a>
     <script lang="JavaScript">
         var nombre;
-        nombre = Santino;
+        nombre = "santino";
 
         var res;
-
+        
+        var num2;
+        
         var edad;
         edad = 16;
 
@@ -19,18 +28,10 @@
         esEstudiante = true;
 
         function saludar(nombre){
-            alert("Hola ",nombre);
+            alert("Hola "+nombre);
         };
 
-        const num1 = Document.getElementById("Numero1");
-        const ingr = Document.getElementById("ingresar");
-
-        ingr.addEventListener("click", () => {
-            console.log('object');
-            mostrar(); 
-        });
-
-        function mostrar(){
+        function mostrar(num1){
             if (num1 < 0) {
                 res = ("Negativo");
             } else if (num1 > 0){
@@ -38,8 +39,25 @@
             } else {
                 res = ("Igual a cero");
             };
-           return alert(res);
+           return("resultado"+res);
         };
+
+       function pepe(){
+        while (num2 != 5){
+
+return(num2);
+
+num2 = num2 + 1;
+}
+       }
+
+        function tomas(){
+            for (i = 0; i != 5; i++){
+
+return(i); 
+
+}
+        }
 
     </script>
     
